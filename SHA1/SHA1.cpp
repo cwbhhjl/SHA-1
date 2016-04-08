@@ -12,6 +12,37 @@ uint64_t messageLength;
 
 uint32_t w[80] = { 0 };
 
-void sha1Init(char* str) {
-	
+List Date;
+
+void sha1Init(const char* str) {
+	uint32_t strLen = strlen(str);
+
+	for (uint32_t i = strLen; i > 0; i--) 
+	{
+		listAdd(Date, str[strLen - i]);
+	}
+
+	listAdd(Date, 0x80);
+
+	uint16_t rem = (strLen + 1)%512;
+	uint16_t need;
+
+	if (rem==448)
+	{
+		return;
+	}
+
+	if (rem > 448) 
+	{
+		need = 960 - rem;
+	}
+	else
+	{
+		need = 448 - rem;
+	}
+
+	for (uint16_t i = 0; i < need; i++)
+	{
+		listAdd(Date, 0x00);
+	}
 }
