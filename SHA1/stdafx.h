@@ -8,7 +8,10 @@
 #include "targetver.h"
 
 #include <stdio.h>
+#include <stdint.h>
 #include <tchar.h>
+
+#include "sha1.h"
 
 
 
