@@ -169,7 +169,7 @@ void sha1FileCal( )
 			{
 				if (0 <= l <= 19)
 				{
-					f = (b & c) | ((!b) & d);
+					f = (b & c) | ((~b) & d);
 					k = K1;
 				}
 				else if (20 <= l <= 39)
