@@ -8,24 +8,24 @@ uint32_t h4 = 0xC3D2E1F0;
 
 uint32_t a, b, c, d, e, f, temp;
 
-uint64_t messageLength;
+uint64_t dataLength;
 
 uint32_t w[80] = { 0 };
 
 List Date;
 
 void sha1Init(const char* str) {
-	uint64_t strLen = strlen(str);
+	dataLength = strlen(str);
 
 	//初始化数据
-	for (uint32_t i = strLen; i > 0; i--)
+	for (uint32_t i = dataLength; i > 0; i--)
 	{
-		listAdd(Date, str[strLen - i]);
+		listAdd(Date, str[dataLength - i]);
 	}
 
 	listAdd(Date, 0x80);
 
-	uint16_t rem = (strLen + 1) % 512;
+	uint16_t rem = (dataLength + 1) % 512;
 	uint16_t need;
 
 	if (rem == 448)
@@ -52,7 +52,7 @@ void sha1Init(const char* str) {
 
 	for (uint8_t i = 0; i < 8; i++)
 	{
-		strLenData[i] = (strLen >> (8 * (7 - i))) & 0xFF;
+		strLenData[i] = (dataLength >> (8 * (7 - i))) & 0xFF;
 	}
 
 	//补长度
@@ -61,3 +61,4 @@ void sha1Init(const char* str) {
 		listAdd(Date, strLenData[i]);
 	}
 }
+
