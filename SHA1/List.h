@@ -3,7 +3,7 @@
 struct ListNode {
 	uint8_t date;
 	ListNode* next;
-};
+};//需要改用队列
 
 typedef struct ListNode ListNode;
 
