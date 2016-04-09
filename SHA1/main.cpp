@@ -7,7 +7,7 @@
 
 int main()
 {
-	uint8_t* rawData = NULL; 
+	uint8_t* data = NULL; 
 	FILE* file = NULL;
 	uintmax_t fileSize = 0;
 	errno_t err = fopen_s(&file,"D:\\PortableApp\\Aero Adjuster\\ColorHelper.dll", "rb");
@@ -39,13 +39,26 @@ int main()
 			need = (449 - rem) / 8;
 		}
 
+		data = (uint8_t*)calloc((fileSize + need + 8), sizeof(uint8_t));
 
-		rawData = (uint8_t*)calloc((fileSize + need + 8), sizeof(uint8_t));
+		fread_s(data, fileSize, 1, fileSize, file);
 
-		fread_s(rawData, fileSize, 1, fileSize, file);
+		data[fileSize] = 0x80;
+
+		for (uint16_t i = 1; i < need; i++)
+		{
+			data[fileSize + i] = 0x00;
+		}
+
+		uint8_t lengthData[8];
+
+		for (uint8_t i = 0; i < 8; i++)
+		{
+			data[fileSize + need + i] = (fileSize >> (8 * (7 - i))) & 0xFF;
+		}
 	}
 
-	sha1FileInit(rawData);
+	sha1FileInit(data);
 
 	getchar();
     return 0;
