@@ -15,6 +15,7 @@
 
 #include "sha1.h"
 #include "List.h"
+#include "util.h"
 
 
 
