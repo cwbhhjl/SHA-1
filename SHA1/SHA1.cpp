@@ -14,7 +14,7 @@ uint32_t w[80] = { 0 };
 
 List Date;
 
-void sha1Init(const char* str) {
+void sha1StringInit(const char* str) {
 	dataLength = strlen(str);
 
 	//初始化数据
@@ -60,5 +60,10 @@ void sha1Init(const char* str) {
 	{
 		listAdd(Date, strLenData[i]);
 	}
+}
+
+void sha1FileInit(uint8_t* data)
+{
+
 }
 
