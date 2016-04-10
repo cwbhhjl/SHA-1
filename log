@@ -1,0 +1,192 @@
+""
+
+w[0]-w[15]:
+80000000
+00000000 
+00000000 
+00000000
+00000000 
+00000000 
+00000000 
+00000000
+00000000 
+00000000 
+00000000 
+00000000
+00000000 
+00000000 
+00000000 
+00000000
+
+
+w[]
+		[0]	    0x80000000	uint
+		[1]	    0x00000000	uint
+		[2]	    0x00000000	uint
+		[3]	    0x00000000	uint
+		[4]	    0x00000000	uint
+		[5]	    0x00000000	uint
+		[6]	    0x00000000	uint
+		[7]	    0x00000000	uint
+		[8]	    0x00000000	uint
+		[9]	    0x00000000	uint
+		[10]	0x00000000	uint
+		[11]	0x00000000	uint
+		[12]	0x00000000	uint
+		[13]	0x00000000	uint
+		[14]	0x00000000	uint
+		[15]	0x00000000	uint
+		[16]	0x00000001	uint
+		[17]	0x00000000	uint
+		[18]	0x00000000	uint
+		[19]	0x00000002	uint
+		[20]	0x00000000	uint
+		[21]	0x00000000	uint
+		[22]	0x00000004	uint
+		[23]	0x00000000	uint
+		[24]	0x00000002	uint
+		[25]	0x00000008	uint
+		[26]	0x00000000	uint
+		[27]	0x00000000	uint
+		[28]	0x00000010	uint
+		[29]	0x00000000	uint
+		[30]	0x0000000a	uint
+		[31]	0x00000020	uint
+		[32]	0x00000006	uint
+		[33]	0x00000000	uint
+		[34]	0x00000040	uint
+		[35]	0x00000008	uint
+		[36]	0x00000028	uint
+		[37]	0x00000080	uint
+		[38]	0x00000008	uint
+		[39]	0x00000000	uint
+		[40]	0x00000108	uint
+		[41]	0x00000000	uint
+		[42]	0x000000a0	uint
+		[43]	0x00000200	uint
+		[44]	0x00000064	uint
+		[45]	0x00000000	uint
+		[46]	0x00000408	uint
+		[47]	0x00000088	uint
+		[48]	0x0000029c	uint
+		[49]	0x00000800	uint
+		[50]	0x00000080	uint
+		[51]	0x00000028	uint
+		[52]	0x00001088	uint
+		[53]	0x00000000	uint
+		[54]	0x00000a40	uint
+		[55]	0x00002000	uint
+		[56]	0x00000668	uint
+		[57]	0x00000080	uint
+		[58]	0x00004088	uint
+		[59]	0x00000880	uint
+		[60]	0x000028c8	uint
+		[61]	0x00008000	uint
+		[62]	0x000008a8	uint
+		[63]	0x00000080	uint
+		[64]	0x000108e8	uint
+		[65]	0x00000000	uint
+		[66]	0x0000a000	uint
+		[67]	0x00020080	uint
+		[68]	0x00006400	uint
+		[69]	0x00000000	uint
+		[70]	0x00040800	uint
+		[71]	0x00008800	uint
+		[72]	0x00029c10	uint
+		[73]	0x00080000	uint
+		[74]	0x00008080	uint
+		[75]	0x00002820	uint
+		[76]	0x001088c0	uint
+		[77]	0x00000000	uint
+		[78]	0x000a40c0	uint
+		[79]	0x00200080	uint
+
+t=0 temp=0x1fb498b3 		
+        A	0x1fb498b3	uint
+		B	0x67452301	uint
+		C	0x7bf36ae2	uint
+		D	0x98badcfe	uint
+		E	0x10325476	uint
+
+		b&c=0x88888888 ~b & d=0x10325478 
+				temp	0x1fb498b3	uint
+				C	0x7bf36ae2	uint
+		A	0x1fb498b3	uint
+		B	0x67452301	uint
+		C	0x7bf36ae2	uint
+		D	0x98badcfe	uint
+		E	0x10325476	uint
+
+t=1 	A	0x5d43e370	uint
+		B	0x1fb498b3	uint
+		C	0x59d148c0	uint
+		D	0x7bf36ae2	uint
+		E	0x98badcfe	uint
+
+t=2		A	0x158d2f62	uint
+		B	0x5d43e370	uint
+		C	0xc7ed262c	uint
+		D	0x59d148c0	uint
+		E	0x7bf36ae2	uint
+
+t=3		A	0xcdecfb5d	uint
+		B	0x158d2f62	uint
+		C	0x1750f8dc	uint
+		D	0xc7ed262c	uint
+		E	0x59d148c0	uint
+
+t=4		A	0x4953565e	uint
+		B	0xcdecfb5d	uint
+		C	0x85634bd8	uint
+		D	0x1750f8dc	uint
+		E	0xc7ed262c	uint
+
+t=5		A	0xe44ab766	uint
+		B	0x4953565e	uint
+		C	0x737b3ed7	uint
+		D	0x85634bd8	uint
+		E	0x1750f8dc	uint
+
+t=6		A	0xc09d7f27	uint
+		B	0xe44ab766	uint
+		C	0x9254d597	uint
+		D	0x737b3ed7	uint
+		E	0x85634bd8	uint
+
+t=7		A	0x87074800	uint
+		B	0xc09d7f27	uint
+		C	0xb912add9	uint
+		D	0x9254d597	uint
+		E	0x737b3ed7	uint
+
+t=8		A	0x41376611	uint
+		B	0x87074800	uint
+		C	0xf0275fc9	uint
+		D	0xb912add9	uint
+		E	0x9254d597	uint
+
+t=19
+		A	0x1fb498b3	uint
+		B	0x67452301	uint
+		C	0x7bf36ae2	uint
+		D	0x98badcfe	uint
+		E	0x10325476	uint
+
+		erro:19:		a	0x068e52c7	unsigned int
+		b	0xe758e8da	unsigned int
+		c	0x42cc2237	unsigned int
+		d	0x8a2a5483	unsigned int
+		e	0xc1afe45c	unsigned int
+
+
+
+t=79
+    	A	0xd37db937	uint
+		B	0x9b9d2913	uint
+		C	0xa60af2f2	uint
+		D	0xb86beac8	uint
+		E	0xc5a3382e	uint
+
+
+
+

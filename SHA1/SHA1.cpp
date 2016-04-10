@@ -167,22 +167,22 @@ void sha1FileCal( )
 
 			for (uint8_t l = 0; l < 80; l++)
 			{
-				if (0 <= l <= 19)
+				if (0 <= l && l<= 19)
 				{
 					f = (b & c) | ((~b) & d);
 					k = K1;
 				}
-				else if (20 <= l <= 39)
+				else if (20 <= l && l<= 39)
 				{
 					f = b ^ c ^ d;
 					k = K2;
 				}
-				else if (40 <= l <= 59)
+				else if (40 <= l && l<= 59)
 				{
 					f = (b & c) | (b & d) | (c & d);
 					k = K3;
 				}
-				else if (60 <= l <= 79)
+				else if (60 <= l && l<= 79)
 				{
 					f = b ^ c ^ d;
 					k = K4;
