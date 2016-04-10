@@ -1,16 +1,16 @@
 #include "stdafx.h"
 
-uint32_t H00 = 0x67452301;
-uint32_t H11 = 0xEFCDAB89;
-uint32_t H22 = 0x98BADCFE;
-uint32_t H33 = 0x10325476;
-uint32_t H44 = 0xC3D2E1F0;
+uint32_t h00 = 0x67452301;
+uint32_t h11 = 0xEFCDAB89;
+uint32_t h22 = 0x98BADCFE;
+uint32_t h33 = 0x10325476;
+uint32_t h44 = 0xC3D2E1F0;
 
 uint32_t a, b, c, d, e, f, k, temp;
 
 uint64_t dataLength;
 
-uint32_t w[80] = { 0 };
+
 
 List Date;
 
@@ -75,7 +75,7 @@ void sha1FileCal( )
 
 	FILE* file = NULL;
 	//errno_t err = fopen_s(&file, "D:\\PortableApp\\Aero Adjuster\\ColorHelper.dll", "rb");
-	errno_t err = fopen_s(&file, "E:\\test.txt", "rb");
+	errno_t err = fopen_s(&file, "D:\\Proxy\\Shadowsocks\\Shadowsocks.exe", "rb");
 	uintmax_t fileSize = 0;
 
 	if (err)
@@ -135,6 +135,8 @@ void sha1FileCal( )
 		//¿é´¦Àí
 		for (uintmax_t i = 0; i < blockNum; i++)
 		{
+			uint32_t w[80] = { 0 };
+
 			for (uint8_t j = 0; j < 64; j++)
 			{
 				w[j / 4] |= ((uint32_t)data[j + i * 64]) << (24 - (j % 4) * 8);

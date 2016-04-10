@@ -227,13 +227,13 @@ namespace sha1csharp
         public static string TestSuite()
         {     
             string s = ""; 
-            s+=Test(""); 
+            s+=Test("abcaasdfdgetnhtdhbndfgvbgvgervgbvev befregvevrefgwrdsaaa"); 
             s+=Test("a"); 
             s+=Test("abc"); 
             s+=Test("abcdbcdecdefdefgefghfghighijhijkijkljklmklmnlmnomnopnopq"); 
             s+=Test("abcdefghijklmnopqrstuvwxyz"); 
             s+=Test("ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"); 
-            s+=Test("12345678901234567890123456789012345678901234567890123456789012345678901234567890"); 
+            s+=Test("abcaasdfdgetnhtdhbndfgvbgvgervgbvev befregvevrefgwrdsxwxwxwxwx"); 
             //        StringBuilder sb = new StringBuilder();
             //        for(int i=0; i<1000000; i++)
             //            sb.Append("a");
