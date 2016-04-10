@@ -190,3 +190,94 @@ t=79
 
 
 
+first block:
+
+		h0	0xc00ec80e	unsigned int
+		h1	0x623db3ed	unsigned int
+		h2	0xe136f395	unsigned int
+		h3	0xc8441c49	unsigned int
+		h4	0x783120d8	unsigned int
+
+		[0]	0x00000000	uint
+		[1]	0x00000000	uint
+		[2]	0x00000000	uint
+		[3]	0x00000000	uint
+		[4]	0x00000000	uint
+		[5]	0x00000000	uint
+		[6]	0x00000000	uint
+		[7]	0x00000000	uint
+		[8]	0x00000000	uint
+		[9]	0x00000000	uint
+		[10]	0x00000000	uint
+		[11]	0x00000000	uint
+		[12]	0x00000000	uint
+		[13]	0x00000000	uint
+		[14]	0x00000000	uint
+		[15]	0x000001c0	uint
+		[16]	0x00000000	uint
+		[17]	0x00000000	uint
+		[18]	0x00000380	uint
+		[19]	0x00000000	uint
+		[20]	0x00000000	uint
+		[21]	0x00000700	uint
+		[22]	0x00000000	uint
+		[23]	0x00000380	uint
+		[24]	0x00000e00	uint
+		[25]	0x00000000	uint
+		[26]	0x00000000	uint
+		[27]	0x00001c00	uint
+		[28]	0x00000000	uint
+		[29]	0x00000d80	uint
+		[30]	0x00003800	uint
+		[31]	0x00000480	uint
+		[32]	0x00000000	uint
+		[33]	0x00007000	uint
+		[34]	0x00000e00	uint
+		[35]	0x00003600	uint
+		[36]	0x0000e000	uint
+		[37]	0x00000e00	uint
+		[38]	0x00000000	uint
+		[39]	0x0001ce00	uint
+		[40]	0x00000000	uint
+		[41]	0x0000d800	uint
+		[42]	0x00038000	uint
+		[43]	0x00004f00	uint
+		[44]	0x00000000	uint
+		[45]	0x00070e00	uint
+		[46]	0x0000ee00	uint
+		[47]	0x00037500	uint
+		[48]	0x000e0000	uint
+		[49]	0x0000e000	uint
+		[50]	0x00003600	uint
+		[51]	0x001cee00	uint
+		[52]	0x00000000	uint
+		[53]	0x000df000	uint
+		[54]	0x00380000	uint
+		[55]	0x0004c600	uint
+		[56]	0x0000e000	uint
+		[57]	0x0070ee00	uint
+		[58]	0x000ee000	uint
+		[59]	0x00369e00	uint
+		[60]	0x00e00000	uint
+		[61]	0x000ed600	uint
+		[62]	0x0000e000	uint
+		[63]	0x01cea600	uint
+		[64]	0x00000000	uint
+		[65]	0x00d80000	uint
+		[66]	0x0380e000	uint
+		[67]	0x004f0000	uint
+		[68]	0x00000000	uint
+		[69]	0x070e0000	uint
+		[70]	0x00ee0000	uint
+		[71]	0x03751c00	uint
+		[72]	0x0e000000	uint
+		[73]	0x00e0e000	uint
+		[74]	0x00363800	uint
+		[75]	0x1cee9000	uint
+		[76]	0x00000000	uint
+		[77]	0x0df09000	uint
+		[78]	0x3800e000	uint
+		[79]	0x04c77400	uint
+
+
+

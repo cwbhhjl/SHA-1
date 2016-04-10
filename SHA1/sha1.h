@@ -5,5 +5,5 @@
 #define K3 0x8F1BBCDC
 #define K4 0xCA62C1D6
 
-void sha1FileCal();
+void sha1(char* path);
 
